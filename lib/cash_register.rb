@@ -24,6 +24,8 @@ if @total < 0
 else
   "After the discount, the total comes to $#{@total}."
 end
+end
+
 
 
 def void_last_transaction
