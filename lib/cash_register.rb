@@ -3,7 +3,6 @@ class CashRegister
 
 attr_accessor :total, :discount, :items, :last_trans
 
-
 def initialize(discount=0)
   @items=[]
 @total = 0
@@ -26,13 +25,8 @@ else
 end
 end
 
-
-
 def void_last_transaction
 @total=total-self.last_trans
 end
-
-
-
 
 end
