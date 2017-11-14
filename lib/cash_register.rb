@@ -18,7 +18,7 @@ def add_item(title, price, quantity=1)
 end
 
 def apply_discount
-@total = total-total*(@discount.to_i/100.to_f)
+@total = total-(total*@discount.to_i/100.to_f)
 if @total > 0
   "There is no discount to apply."
 else
