@@ -18,6 +18,7 @@ def add_item(title, price, quantity=1)
 end
 
 def apply_discount
+@total = total-total*@discount.to_i/100.to_f
 
 end
 
