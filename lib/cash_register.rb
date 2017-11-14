@@ -20,7 +20,7 @@ end
 def apply_discount
 @total = total-(total*@discount.to_i/100.to_f)
 if @total > 0
-  "After the discount, the total comes to $#{@total}."
+  "After the discount, the total comes to $#{@total.round}."
 else
   "There is no discount to apply."
 end
