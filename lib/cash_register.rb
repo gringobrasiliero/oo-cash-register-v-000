@@ -23,7 +23,7 @@ end
 
 
 def void_last_transaction
-@total-@last_trans
+@total=total-self.last_trans
 end
 
 
