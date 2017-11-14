@@ -19,10 +19,10 @@ end
 
 def apply_discount
 @total = total-(total*@discount.to_i/100.to_f)
-if @total < 0
-  "There is no discount to apply."
-else
+if @total > 0
   "After the discount, the total comes to $#{@total}."
+else
+  "There is no discount to apply."
 end
 end
 
